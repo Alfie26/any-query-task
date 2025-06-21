@@ -679,18 +679,49 @@ main .cards-container .card button:hover {
 @media (max-width: 1440px) {
   header {
     width: 1440px;
+    padding: 0 40px;
   }
+
   header .search {
     width: 479px;
+    margin: 0 20px;
   }
+
   main {
     width: 1240px;
+    padding: 0 40px;
+    box-sizing: border-box;
   }
+
   main .cards-container {
     width: 924px;
+    grid-template-columns: repeat(4, 213px);
+    justify-content: center;
   }
+
   main .cards-container .card {
     width: 213px;
     height: 372px;
+  }
+
+  main .cards-container .card .product {
+    width: 100%;
+  }
+
+  main .cards-container .card .product .item {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    padding-top: 76.5px;
+    padding-left: 70px;
+  }
+
+  main .cards-container .card:hover .product .item {
+    padding-left: 65.5px;
+  }
+
+  #card3 button {
+    width: 100%;
+    height: 38px;
   }
 }
