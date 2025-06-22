@@ -21,23 +21,26 @@ body {
 
 header {
   display: flex;
-  width: 1720px;
+  width: 100%;
+  max-width: 1720px;
   height: 72px;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  gap: 24px;
 }
 
 header .header-left {
   display: flex;
-  width: 257px;
   height: 48px;
   padding: 12px 0 12px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 header .header-left .frame-logo {
   display: flex;
-  width: 145;
+  gap: 12px;
   height: 48px;
   padding: 0 24px 0 24px;
   justify-content: center;
@@ -53,14 +56,12 @@ header .header-left .logo {
 }
 
 header .header-left p {
-  width: 65px;
   height: 19px;
   padding: auto;
   font-size: 16px;
   font-weight: 400;
 }
 header .header-left button {
-  width: 104;
   height: 48;
   padding: 8px 24px 8px 24px;
   border: 1px solid #73aff4;
@@ -80,7 +81,8 @@ header .header-left button:hover {
 
 header .search {
   display: flex;
-  width: 991px;
+  width: 100%;
+  max-width: 991px;
   height: 24px;
   padding: 12px 16px 12px 16px;
   border-radius: 10px;
@@ -95,7 +97,7 @@ header .search::-webkit-input-placeholder {
 }
 
 header .search input {
-  width: 983px;
+  width: 100%;
   height: 24px;
   border: 0px;
 }
@@ -107,8 +109,6 @@ header .search img {
 
 header .header-right {
   display: flex;
-  padding: 0 0 0 24px;
-  width: 400px;
   height: 17px;
   flex-grow: 0;
   flex-shrink: 0;
@@ -126,9 +126,10 @@ main {
   display: flex;
   flex-direction: row;
   gap: 36px;
-  width: 1720px;
+  width: 100%;
+  max-width: 1720px;
   height: 1132px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 24px 0;
 }
 
@@ -136,11 +137,10 @@ main .filter {
   display: flex;
   flex-direction: column;
   width: 280px;
-  height: 760px;
 }
 
 main .filter .category-filter {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   height: 120px;
@@ -284,7 +284,7 @@ main .price .price-filter h2 {
 }
 
 main .brand {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 268px;
   padding-top: 28px;
 }
@@ -415,7 +415,7 @@ main .size {
   display: flex;
   flex-direction: column;
   height: 216px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 28px 0;
 }
 
@@ -489,8 +489,7 @@ main .size .list .list-item p {
 }
 
 main .cards-container {
-  width: 1404px;
-  height: 1132px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -498,7 +497,7 @@ main .cards-container {
 }
 
 main .cards-container .card {
-  width: 333px;
+  width: 100%;
   height: 356px;
   display: flex;
   flex-direction: column;
@@ -511,7 +510,6 @@ main .cards-container .card {
 }
 
 main .cards-container .card .product {
-  width: 333px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -563,8 +561,8 @@ main .cards-container .card .product .item {
   width: 60px;
   height: 60px;
   position: absolute;
-  padding-top: 70px;
-  padding-left: 136.5px;
+  /* padding-top: 70px;
+  padding-left: 136.5px; */
 }
 
 #card3 .item {
@@ -659,7 +657,7 @@ main .cards-container .card button {
 #card3 button {
   border: 1px solid #aaaaaa;
   color: #aaaaaa;
-  width: 333px;
+  width: 100%;
   height: 38px;
   margin-top: 62px;
 }
@@ -689,7 +687,6 @@ main .cards-container .card button:hover {
 
   main {
     width: 1240px;
-    padding: 0 40px;
     box-sizing: border-box;
   }
 

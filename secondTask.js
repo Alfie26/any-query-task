@@ -8,14 +8,3 @@ const specs = {};
   specs[key] = item.getElementsByClassName("parameter-value")[0].innerText;
 });
 console.log(specs);
-
-[
-  ...document
-    .getElementById("tab1")
-    .getElementsByClassName("tab-pane-product-parameter-item"),
-].reduce((acc, element) => {
-  const key = element.children[0].innerText;
-  const value = element.children[1].textContent;
-  acc[key] = value;
-  return acc;
-}, {});
